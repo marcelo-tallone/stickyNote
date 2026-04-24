@@ -92,6 +92,11 @@ launchctl unload ~/Library/LaunchAgents/com.user.stickynote.plist
 | Click izquierdo en 📝 | Abre una nueva nota |
 | Click derecho en 📝 | Menú: historial, nueva nota, salir |
 | `Cmd+V` dentro de una nota | Pega texto sin formato |
+| `Cmd+C` dentro de una nota | Copiar texto seleccionado |
+| `Cmd+X` dentro de una nota | Cortar texto seleccionado |
+| `Cmd+Z` dentro de una nota | Deshacer |
+| `Cmd+Shift+Z` dentro de una nota | Rehacer |
+| `Cmd+A` dentro de una nota | Seleccionar todo |
 | Cerrar una nota (X) | La guarda en el historial |
 | Arrastrar esquina de la nota | Redimensionar |
 | Arrastrar la nota | Moverla de lugar |
