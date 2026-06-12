@@ -267,6 +267,13 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSWindowDelegate {
 
     // MARK: NSWindowDelegate
 
+    func windowDidDeminiaturize(_ notification: Notification) {
+        guard let window = notification.object as? StickyWindow else { return }
+        window.collectionBehavior = [.canJoinAllSpaces, .stationary, .fullScreenAuxiliary]
+        window.level = .screenSaver
+        window.orderFrontRegardless()
+    }
+
     func windowWillClose(_ notification: Notification) {
         guard let window = notification.object as? StickyWindow else { return }
         // Save to history before closing
